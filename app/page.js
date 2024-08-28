@@ -13,14 +13,13 @@ export default function Home() {
   return (
     <div className="">
       <HeroSection />
-      {/* <Planat />
+      <Planat />
       <Industries />
       <DiscussProject />
       <DevelopmentStage />
       <OurTeam />
       <FAQ />
-      <Footer /> */}
-      <h1>bhdvd fbd</h1>
+      <Footer />
     </div>
   );
 }

@@ -3,11 +3,11 @@ import { CardContainer } from "../ui/3d-card";
 
 const OurTeam = () => {
   return (
-    <div className="pt-12 md:pt-0 bg-gray-100">
-      <div className="flex flex-col md:flex-row items-center w-5/6 m-auto">
-        <div className="w-full md:w-1/2 flex flex-col md:mr-12">
-          <h2 className="text-4xl font-bold mb-6">Our team</h2>
-          <p className="mb-6">
+    <div className=" bg-gray-100 text-black">
+      <div className="flex flex-col lg:flex-row items-center w-5/6 m-auto">
+        <div className="pt-8 lg:pt-0   w-full lg:w-1/2 flex flex-col md:mr-12">
+          <h2 className="text-4xl font-bold py-4">Our team</h2>
+          <p className="pb-4">
             Thousand is a full-cycle digital production company with its own
             product analytics, design, web and mobile development.
           </p>
@@ -37,9 +37,13 @@ const OurTeam = () => {
             expensive but worth it.
           </p>
         </div>
-        <div className="w-full md:w-1/2">
+        <div className="w-full lg:w-1/2">
           <CardContainer className="inter-var">
-            <img src="/img-61151@2x.png" alt="Team illustration" />
+            <img
+              src="/img-61151@2x.png"
+              alt="Team illustration"
+              className="md:h-96 lg:h-auto "
+            />
           </CardContainer>
         </div>
       </div>

@@ -26,9 +26,9 @@ const Planat = () => {
     },
   ];
   return (
-    <div className="w-full bg-white">
-      <div className="w-11/12 m-auto border border-y-2 border-x-0 mb-8">
-        <div className="h-[20] mt-8 md:mt-0 rounded-md flex flex-col antialiased dark:bg-grid-white/[0.05] items-center justify-center relative overflow-hidden">
+    <div className="w-full bg-white py-4">
+      <div className="w-11/12 m-auto  ">
+        <div className="h-[20] md:mt-0 rounded-md flex flex-col antialiased dark:bg-grid-white/[0.05] items-center justify-center relative overflow-hidden">
           <InfiniteMovingCards
             items={testimonials}
             direction="right"
@@ -36,7 +36,9 @@ const Planat = () => {
           />
         </div>
       </div>
-      <div className="w-5/6 mt-8 m-auto flex flex-col lg:flex-row">
+
+      <div className="divider divider-info w-11/12 lg:w-full m-auto"></div>
+      <div className="w-5/6 pb-6 md:py-10 text-black m-auto flex flex-col lg:flex-row">
         <div className="w-full lg:w-1/2 mb-8 lg:mb-0">
           <h2 className="text-4xl font-bold mt-8 md:mt-0">
             Full development cycle

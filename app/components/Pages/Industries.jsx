@@ -4,14 +4,14 @@ import React, { useState } from "react";
 const Industries = () => {
   const [activeProject, setActiveProject] = useState("Project 1");
 
-  const projects = ["Project 1", "Project 2", "Project 3", "Project 4"];
+  const projects = ["Project 1", "Project 2", "Project 3"];
 
   const handleButtonClick = (project) => {
     setActiveProject(project);
   };
 
   return (
-    <div className="bg-gray-100 my-12">
+    <div className="bg-gray-100 text-black">
       {/* Industries 15 */}
       <div className="w-5/6 m-auto font-semibold py-12 ">
         <h2 className="lg:w-1/2 text-2xl md:text-4xl mb-8">
@@ -87,9 +87,9 @@ const Industries = () => {
           </div>
         </div>
       </div>
-      {/* test part project1 */}
-      <div className="w-5/6 m-auto mt-6">
-        <div className="lg:w-1/2 md:w-3/4">
+      {/* text part project1 */}
+      <div className="w-5/6 m-auto">
+        <div className="">
           <h2 className="text-4xl font-bold">Projects we are proud of</h2>
           <p className="text-lg py-6">
             Our software development company is truly proud of the wonderful
@@ -97,7 +97,7 @@ const Industries = () => {
           </p>
         </div>
         {/* part 2 show project */}
-        <div className="mt-6">
+        <div>
           <div className="flex space-x-8">
             {projects.map((project) => (
               <button
@@ -115,22 +115,22 @@ const Industries = () => {
             ))}
           </div>
           {/* project data 😎😎 */}
-          <div className="py-12 flex flex-col lg:flex-row items-center lg:items-start">
+          <div className="py-6 flex flex-col lg:flex-row items-center lg:items-start">
             {/* Project Description */}
             <div className="flex-1 lg:mr-8">
               <h1 className="text-3xl font-bold text-gray-900 mb-4">
                 {activeProject}
               </h1>
-              <p className=" mb-4">
+              <p>
                 Crafted an innovative rental property management app, seamlessly
                 integrating secure login, absence registration, and a tenant
                 notice board. Elevating the resident experience with
                 user-friendly design and efficient communication channels.
               </p>
-              <p className="mb-4">
+              <p className="py-2">
                 Business analysis / iOS / Android / QA / UI/UX Design
               </p>
-              <p className="mb-4">
+              <p className="py-2">
                 <span className="inline-flex items-center mr-2 gap-2">
                   <svg
                     width="16"
@@ -172,7 +172,7 @@ const Industries = () => {
                   Real Estate
                 </span>
               </p>
-              <div className="flex items-center mb-4">
+              <div className="flex items-center py-2">
                 <div className="mr-8">
                   <span className="text-2xl font-bold text-gray-900">400%</span>
                   <p className="text-gray-500">User Growth</p>
@@ -194,8 +194,8 @@ const Industries = () => {
               </div>
             </div>
             {/* Project Image */}
-            <div className="md:ml-24 flex-1 mt-8 lg:mt-0">
-              <img src="/project1.png" alt="Project" className="" />
+            <div className="md:ml-24 flex-1 py-8">
+              <img src="/project1.png" alt="Project" />
             </div>
           </div>
         </div>
