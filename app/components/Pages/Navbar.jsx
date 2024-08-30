@@ -2,7 +2,13 @@
 import React, { useState } from "react";
 import { Menu, MenuItem, HoveredLink } from "../ui/navbar-menu";
 
-const Navbar = () => {
+const Navbar = ({
+  onFAQClick,
+  onContactClick,
+  onindustriesClick,
+  onDevelopmentStageClick,
+  onOurTeamClick,
+}) => {
   const [active, setActive] = useState();
   const [menu, setMenu] = useState(false);
 
@@ -18,19 +24,34 @@ const Navbar = () => {
               src="/logobg2-1@2x.png"
             />
             <div className="hidden md:flex items-center gap-4 lg:gap-6">
-              <div className="font-semibold text-gray-600 hover:text-gray-950">
+              <div
+                onClick={onindustriesClick}
+                className="font-semibold text-gray-600 hover:text-gray-950"
+              >
                 Services
               </div>
-              <div className="font-semibold text-gray-600 hover:text-gray-950">
+              <div
+                onClick={onOurTeamClick}
+                className="font-semibold text-gray-600 hover:text-gray-950"
+              >
                 Media
               </div>
-              <div className="font-semibold text-gray-600 hover:text-gray-950">
+              <div
+                onClick={onDevelopmentStageClick}
+                className="font-semibold text-gray-600 hover:text-gray-950"
+              >
                 Cases
               </div>
-              <div className="font-semibold text-gray-600 hover:text-gray-950">
+              <div
+                onClick={onFAQClick}
+                className="font-semibold text-gray-600 hover:text-gray-950"
+              >
                 FAQ
               </div>
-              <div className="font-semibold text-gray-600 hover:text-gray-950">
+              <div
+                onClick={onContactClick}
+                className="font-semibold text-gray-600 hover:text-gray-950"
+              >
                 Contacts
               </div>
             </div>
@@ -122,30 +143,35 @@ const Navbar = () => {
       >
         <a
           href="#"
+          onClick={onindustriesClick}
           className="block rounded-md px-3 py-2 text-base font-medium text-gray-300 hover:bg-gray-700 hover:text-white"
         >
           Services
         </a>
         <a
           href="#"
+          onClick={onOurTeamClick}
           className="block rounded-md px-3 py-2 text-base font-medium text-gray-300 hover:bg-gray-700 hover:text-white"
         >
           Media
         </a>
         <a
           href="#"
+          onClick={onDevelopmentStageClick}
           className="block rounded-md px-3 py-2 text-base font-medium text-gray-300 hover:bg-gray-700 hover:text-white"
         >
           Cases
         </a>
         <a
           href="#"
+          onClick={onFAQClick}
           className="block rounded-md px-3 py-2 text-base font-medium text-gray-300 hover:bg-gray-700 hover:text-white"
         >
           FAQ
         </a>
         <a
           href="#"
+          onClick={onContactClick}
           className="block rounded-md px-3 py-2 text-base font-medium text-gray-300 hover:bg-gray-700 hover:text-white"
         >
           Contacts
