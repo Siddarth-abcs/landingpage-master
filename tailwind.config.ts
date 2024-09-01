@@ -27,6 +27,13 @@ const config: Config = {
           },
         },
       },
+      colors: {
+        white: "#FFFFFF",
+        lightGray: "#F7F7F7",
+        cream: "#F5F5DC",
+        paleBlue: "#E5E5EA",
+        mintGreen: "#B2FFFC",
+      },
     },
   },
   plugins: [
