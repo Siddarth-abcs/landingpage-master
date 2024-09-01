@@ -1,5 +1,4 @@
 import React from "react";
-import { PinContainer } from "../ui/3d-pin";
 
 function DevelopmentStage() {
   return (

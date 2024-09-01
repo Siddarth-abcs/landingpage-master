@@ -7,7 +7,7 @@ const HeroSection = () => {
       {/* Grid box */}
       <div className="absolute inset-0 w-full h-full dark:bg-white bg-white dark:bg-grid-black/[0.2] bg-grid-white/[0.2]"></div>
 
-      <div className="lg:h-screen w-11/12 m-auto lg:pt-8 hero bg-base-200">
+      <div className="w-11/12 m-auto lg:pt-48 lg:pb-32 hero bg-base-200">
         <div className="hero-content flex flex-col lg:flex-row items-center justify-between">
           {/* Text Part */}
           <div className="text-center pt-10 lg:text-left">
