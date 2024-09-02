@@ -28,7 +28,7 @@ const FAQ = () => {
   ];
 
   return (
-    <div className="bg-gray-200 text-black">
+    <div className="bg-white text-black">
       <div className="py-12 w-5/6 m-auto">
         <h2 className="text-4xl font-bold my-4">FAQ</h2>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-x-16">
