@@ -1,4 +1,4 @@
-"use client";
+"use client"; // Ensure this component is a client-side component
 
 import { useRef } from "react";
 import Navbar from "./components/Pages/Navbar";
@@ -19,15 +19,15 @@ export default function Home() {
   const ourTeamRef = useRef(null);
 
   const scrollToFAQ = () =>
-    faqRef.current.scrollIntoView({ behavior: "smooth" });
+    faqRef.current?.scrollIntoView({ behavior: "smooth" });
   const scrollToDiscussProject = () =>
-    discussProjectRef.current.scrollIntoView({ behavior: "smooth" });
+    discussProjectRef.current?.scrollIntoView({ behavior: "smooth" });
   const scrollToIndustries = () =>
-    industriesRef.current.scrollIntoView({ behavior: "smooth" });
+    industriesRef.current?.scrollIntoView({ behavior: "smooth" });
   const scrollToDevelopmentStage = () =>
-    developmentStageRef.current.scrollIntoView({ behavior: "smooth" });
+    developmentStageRef.current?.scrollIntoView({ behavior: "smooth" });
   const scrollToOurTeam = () =>
-    ourTeamRef.current.scrollIntoView({ behavior: "smooth" });
+    ourTeamRef.current?.scrollIntoView({ behavior: "smooth" });
 
   return (
     <div>
