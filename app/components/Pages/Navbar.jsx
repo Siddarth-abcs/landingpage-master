@@ -138,44 +138,39 @@ const Navbar = ({
         className={
           !menu
             ? "hidden"
-            : "bg-cream rounded-xl mt-4 text-center space-y-1 px-2 pb-3 pt-2 shadow-[rgba(13,_38,_76,_0.19)_0px_9px_20px]"
+            : "bg-gray-50 rounded-xl mt-4 text-center space-y-1 px-2 pb-3 pt-2 shadow-[rgba(13,_38,_76,_0.19)_0px_9px_20px]"
         }
       >
-        <a
-          href="#"
+        <div
           onClick={onindustriesClick}
           className="block rounded-md px-3 py-2 text-base font-semibold text-gray-800 hover:bg-gray-200 hover:text-black"
         >
           Services
-        </a>
-        <a
-          href="#"
+        </div>
+        <div
           onClick={onOurTeamClick}
           className="block rounded-md px-3 py-2 text-base font-semibold text-gray-800 hover:bg-gray-200 hover:text-black"
         >
           Media
-        </a>
-        <a
-          href="#"
+        </div>
+        <div
           onClick={onDevelopmentStageClick}
           className="block rounded-md px-3 py-2 text-base font-semibold text-gray-800 hover:bg-gray-200 hover:text-black"
         >
           Cases
-        </a>
-        <a
-          href="#"
+        </div>
+        <div
           onClick={onFAQClick}
           className="block rounded-md px-3 py-2 text-base font-semibold text-gray-800 hover:bg-gray-200 hover:text-black"
         >
           FAQ
-        </a>
-        <a
-          href="#"
+        </div>
+        <div
           onClick={onContactClick}
           className="block rounded-md px-3 py-2 text-base font-semibold text-gray-800 hover:bg-gray-200 hover:text-black"
         >
           Contacts
-        </a>
+        </div>
       </div>
     </div>
   );
